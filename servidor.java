@@ -16,7 +16,6 @@ class Servidor {
             soquete.receive(dp);
             soquete.setSoTimeout(porta);
             System.out.println(new String(dp.getData()).trim());
-            soquete.setSoTimeout(1);
             /*System.out.println("OffSet: " + dp.getOffset());
             System.out.println("lgt: " + dp.getLength());
             System.out.println("porta: " + dp.getPort());
