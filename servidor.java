@@ -3,7 +3,7 @@ import java.net.SocketException;
 import java.net.DatagramPacket;
 import java.io.IOException;
 
-public class Servidor {
+class Servidor {
 
     static int porta = 9999;
     private static byte[] mensagem = "Resposta...".getBytes();
