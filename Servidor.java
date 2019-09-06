@@ -16,11 +16,11 @@ class Servidor {
             soquete.receive(dp);
             soquete.setSoTimeout(porta);
             System.out.println(new String(dp.getData()).trim());
-            /*System.out.println("OffSet: " + dp.getOffset());
+            System.out.println("OffSet: " + dp.getOffset());
             System.out.println("lgt: " + dp.getLength());
             System.out.println("porta: " + dp.getPort());
             System.out.println("endereco: " + dp.getAddress());
-            System.out.println("endereco socket: " + dp.getSocketAddress());*/
+            System.out.println("endereco socket: " + dp.getSocketAddress());
             dp = new DatagramPacket(mensagem, mensagem.length, dp.getAddress(), dp.getPort());
             soquete.send(dp);
         } catch (SocketException se) {
